@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 10px;
+}
+
+body{
+  background-color: #17735F;
+}
+
+.clock{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 550px;
+  width: 550px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 30px solid #3EB29A;
+}
+
+.hour{
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 8px;
+  height: 25px;
+  background-color: rgba(0,0,0,0.9);
+  border-radius: 3px;
+}
+
+.top{
+  left: 50%;
+  top: 2.4%;
+}
+
+.right{
+  right: 1.7%;
+  top: 48.9%;
+  transform: rotate(90deg);
+}
+
+.bottom{
+  left: 50%;
+  bottom: -2.7%;
+}
+
+.left{
+  left: 1.5%;
+  top: 48%;
+  transform: rotate(90deg);
+}
+
+.dot{
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  top: 50.5%;
+  left: 49%;
+  z-index: 100;
+  transform: translate(-40%, -40%);
+}
+
+.hand{
+  position: absolute;
+  top: 51%;
+  left: 49%;
+  border-radius: 10px; 
+	transform-origin: 100% 0;
+}
+
+.second-hand{
+  width: 5px;
+  height: 190px;
+  background-color: #EC2626;
+  z-index: 10;
+}
+
+.hour-hand{
+  width: 3px;
+  height: 140px;
+  background-color: #505050;
+  z-index: 30;
+}
+
+.min-hand{
+  width: 5px;
+  height: 160px;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 20;
+}
